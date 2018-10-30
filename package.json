@@ -1,0 +1,52 @@
+{
+  "name": "abstract-link-loader",
+  "version": "0.1.0",
+  "description": "Webpack loader for loading assets, layer styles, and text styles directly from Abstract",
+  "files": [
+    "/lib",
+    "/docs"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "yarn run build",
+    "build": "babel ./src -d ./lib",
+    "lint": "eslint .",
+    "test": "jest",
+    "test-inspect": "node --inspect-brk ./node_modules/.bin/jest --runInBand",
+    "ci": "yarn lint && yarn flow && yarn test"
+  },
+  "author": "Abstract <andrew@goabstract.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@elasticprojects/eslint-config-abstract": "^4.1.0",
+    "babel-core": "^7.0.0-0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "eslint": "^4.8.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-mocha": "^5.2.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.80.0",
+    "flow-typed": "^2.5.1",
+    "jest": "^23.6.0",
+    "jest-serializer-path": "^0.1.15",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "abstract-sdk": "^0.3.2",
+    "file-loader": "^2.0.0",
+    "loader-utils": "^1.1.0",
+    "url-loader": "^1.1.2"
+  }
+}
