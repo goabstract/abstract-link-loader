@@ -1,5 +1,9 @@
 # abstract-link-loader
 
+## EXPERIMENTAL/WIP
+
+This loader is not ready for production use and is still a WIP. PRs welcomed!
+
 ## Usage
 
 Create a Abstract "link" file in your project:
