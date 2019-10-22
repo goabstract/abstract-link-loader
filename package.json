@@ -44,7 +44,7 @@
     "prettier": "^1.14.2"
   },
   "dependencies": {
-    "abstract-sdk": "^0.3.2",
+    "abstract-sdk": "^4.0.1",
     "file-loader": "^2.0.0",
     "loader-utils": "^1.1.0",
     "url-loader": "^1.1.2"

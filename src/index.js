@@ -2,8 +2,8 @@
 import urlLoader from "url-loader";
 import * as Abstract from "abstract-sdk";
 
-const abstract = Abstract.Client({
-  transport: Abstract.TRANSPORTS.API
+const abstract = new Abstract.Client({
+  transport: "api"
 });
 
 export default function abstractLinkLoader(content: string): void {
