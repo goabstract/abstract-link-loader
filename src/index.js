@@ -16,7 +16,9 @@ export default function abstractLinkLoader(content: string): void {
     let abstractContent;
     try {
       if (descriptor.layerId) {
-        abstractContent = await abstract.previews.raw(descriptor);
+        abstractContent = await abstract.previews.raw(descriptor, {
+          disableWrite: true
+        });
       }
     } catch (error) {
       callback(error);
